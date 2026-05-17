@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <h1>Register</h1>
-            <form action="/submit" method="post">
+            <form action="/submit" method="post" autocomplete="off">
                 <label>
                     Username:
                     <input
@@ -17,6 +17,7 @@
                         name="username"
                         placeholder="Nguyen Huu Hung"
                         required
+                        spellcheck="false"
                     />
                 </label>
                 <br />
@@ -28,13 +29,19 @@
                         name="email"
                         placeholder="nguyenhuuhung@example.com"
                         required
+                        spellcheck="false"
                     />
                 </label>
                 <br />
 
                 <label>
                     Phone Number:
-                    <input type="tel" name="phone" placeholder="0123456789" />
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="0123456789"
+                        spellcheck="false"
+                    />
                 </label>
                 <br />
 
@@ -45,6 +52,7 @@
                         name="password"
                         placeholder="Enter your password"
                         required
+                        spellcheck="false"
                     />
                 </label>
                 <br />
@@ -56,6 +64,7 @@
                         name="confirm_password"
                         placeholder="Confirm your password"
                         required
+                        spellcheck="false"
                     />
                 </label>
                 <br />
@@ -82,21 +91,21 @@
                         type="text"
                         name="address"
                         placeholder="Enter your address"
+                        spellcheck="false"
                     />
                 </label>
                 <br />
 
-                <label>
-                    Profile Avatar:
-                    <input type="file" name="avatar" accept="image/*" />
-                </label>
+                <p>Profile Avatar:</p>
+                <label for="avatar" class="avatar-box"> </label>
+
                 <br />
                 <p>Communication Preferences:</p>
 
                 <div class="check-group">
                     <label>
                         <input
-                            type="checkbox"
+                            type="radio"
                             name="preferences"
                             value="newsletter"
                         />
@@ -105,7 +114,7 @@
 
                     <label>
                         <input
-                            type="checkbox"
+                            type="radio"
                             name="preferences"
                             value="promotions"
                         />
@@ -114,7 +123,7 @@
 
                     <label>
                         <input
-                            type="checkbox"
+                            type="radio"
                             name="preferences"
                             value="updates"
                         />

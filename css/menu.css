@@ -41,6 +41,7 @@
     position: absolute;
     background-color: white;
     min-width: 220px;
+    /* Cho toàn bộ chữ trong dropdown căn trái. */
     text-align: left;
 }
 
